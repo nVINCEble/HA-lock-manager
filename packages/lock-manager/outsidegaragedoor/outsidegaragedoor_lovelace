@@ -1,0 +1,345 @@
+  - title: 'OutsideGarageDoor Codes and Configuration'
+    path: keypad-outsidegaragedoor
+    icon: 'mdi:lock-smart'
+    panel: false
+    badges:
+      - input_boolean.outsidegaragedoor_lock_notifications
+      - input_boolean.outsidegaragedoor_dooraccess_notifications
+      - input_boolean.outsidegaragedoor_garageacess_notifications
+      - entity: >-
+          lock.schlage_be469nxcen_touchscreen_deadbolt_locked_outsidegaragedoor
+      - entity: >-
+          binary_sensor.dummy_dummysensor_access_control_dummysensor
+      - entity: >-
+          cover.garage_door_opener_dummy
+    cards:
+      - type: vertical-stack
+        cards:
+          - content: |
+              ## Code 1
+            type: markdown
+          - type: entities
+            entities:
+              - entity: input_text.outsidegaragedoor_name_1
+              - entity: input_text.outsidegaragedoor_pin_1
+              - entity: input_boolean.enabled_outsidegaragedoor_1
+              - entity: input_boolean.notify_outsidegaragedoor_1
+              - type: divider
+              - entity: binary_sensor.active_outsidegaragedoor_1
+              - type: divider
+              - type: 'custom:fold-entity-row'
+                head:
+                  type: section
+                  label: Advanced Options
+                entities:
+                  - entity: input_boolean.reset_advanced_outsidegaragedoor_1
+                  - type: divider
+                  - entity: input_boolean.accesslimit_outsidegaragedoor_1
+                  - entity: input_number.accesscount_outsidegaragedoor_1
+                  - type: divider
+                  - entity: input_boolean.daterange_outsidegaragedoor_1
+                  - entity: input_datetime.start_date_outsidegaragedoor_1
+                  - entity: input_datetime.end_date_outsidegaragedoor_1
+                  - type: divider
+                  - input_boolean.sun_outsidegaragedoor_1
+                  - input_datetime.sun_start_date_outsidegaragedoor_1
+                  - input_datetime.sun_end_date_outsidegaragedoor_1
+                  - type: divider
+                  - input_boolean.mon_outsidegaragedoor_1
+                  - input_datetime.mon_start_date_outsidegaragedoor_1
+                  - input_datetime.mon_end_date_outsidegaragedoor_1
+                  - type: divider
+                  - input_boolean.tue_outsidegaragedoor_1
+                  - input_datetime.tue_start_date_outsidegaragedoor_1
+                  - input_datetime.tue_end_date_outsidegaragedoor_1
+                  - type: divider
+                  - input_boolean.wed_outsidegaragedoor_1
+                  - input_datetime.wed_start_date_outsidegaragedoor_1
+                  - input_datetime.wed_end_date_outsidegaragedoor_1
+                  - type: divider
+                  - input_boolean.thu_outsidegaragedoor_1
+                  - input_datetime.thu_start_date_outsidegaragedoor_1
+                  - input_datetime.thu_end_date_outsidegaragedoor_1
+                  - type: divider
+                  - input_boolean.fri_outsidegaragedoor_1
+                  - input_datetime.fri_start_date_outsidegaragedoor_1
+                  - input_datetime.fri_end_date_outsidegaragedoor_1
+                  - type: divider
+                  - input_boolean.sat_outsidegaragedoor_1
+                  - input_datetime.sat_start_date_outsidegaragedoor_1
+                  - input_datetime.sat_end_date_outsidegaragedoor_1
+      - type: vertical-stack
+        cards:
+          - content: |
+              ## Code 2
+            type: markdown
+          - type: entities
+            entities:
+              - entity: input_text.outsidegaragedoor_name_2
+              - entity: input_text.outsidegaragedoor_pin_2
+              - entity: input_boolean.enabled_outsidegaragedoor_2
+              - entity: input_boolean.notify_outsidegaragedoor_2
+              - type: divider
+              - entity: binary_sensor.active_outsidegaragedoor_2
+              - type: divider
+              - type: 'custom:fold-entity-row'
+                head:
+                  type: section
+                  label: Advanced Options
+                entities:
+                  - entity: input_boolean.reset_advanced_outsidegaragedoor_2
+                  - type: divider
+                  - entity: input_boolean.accesslimit_outsidegaragedoor_2
+                  - entity: input_number.accesscount_outsidegaragedoor_2
+                  - type: divider
+                  - entity: input_boolean.daterange_outsidegaragedoor_2
+                  - entity: input_datetime.start_date_outsidegaragedoor_2
+                  - entity: input_datetime.end_date_outsidegaragedoor_2
+                  - type: divider
+                  - input_boolean.sun_outsidegaragedoor_2
+                  - input_datetime.sun_start_date_outsidegaragedoor_2
+                  - input_datetime.sun_end_date_outsidegaragedoor_2
+                  - type: divider
+                  - input_boolean.mon_outsidegaragedoor_2
+                  - input_datetime.mon_start_date_outsidegaragedoor_2
+                  - input_datetime.mon_end_date_outsidegaragedoor_2
+                  - type: divider
+                  - input_boolean.tue_outsidegaragedoor_2
+                  - input_datetime.tue_start_date_outsidegaragedoor_2
+                  - input_datetime.tue_end_date_outsidegaragedoor_2
+                  - type: divider
+                  - input_boolean.wed_outsidegaragedoor_2
+                  - input_datetime.wed_start_date_outsidegaragedoor_2
+                  - input_datetime.wed_end_date_outsidegaragedoor_2
+                  - type: divider
+                  - input_boolean.thu_outsidegaragedoor_2
+                  - input_datetime.thu_start_date_outsidegaragedoor_2
+                  - input_datetime.thu_end_date_outsidegaragedoor_2
+                  - type: divider
+                  - input_boolean.fri_outsidegaragedoor_2
+                  - input_datetime.fri_start_date_outsidegaragedoor_2
+                  - input_datetime.fri_end_date_outsidegaragedoor_2
+                  - type: divider
+                  - input_boolean.sat_outsidegaragedoor_2
+                  - input_datetime.sat_start_date_outsidegaragedoor_2
+                  - input_datetime.sat_end_date_outsidegaragedoor_2
+      - type: vertical-stack
+        cards:
+          - content: |
+              ## Code 3
+            type: markdown
+          - type: entities
+            entities:
+              - entity: input_text.outsidegaragedoor_name_3
+              - entity: input_text.outsidegaragedoor_pin_3
+              - entity: input_boolean.enabled_outsidegaragedoor_3
+              - entity: input_boolean.notify_outsidegaragedoor_3
+              - type: divider
+              - entity: binary_sensor.active_outsidegaragedoor_3
+              - type: divider
+              - type: 'custom:fold-entity-row'
+                head:
+                  type: section
+                  label: Advanced Options
+                entities:
+                  - entity: input_boolean.reset_advanced_outsidegaragedoor_3
+                  - type: divider
+                  - entity: input_boolean.accesslimit_outsidegaragedoor_3
+                  - entity: input_number.accesscount_outsidegaragedoor_3
+                  - type: divider
+                  - entity: input_boolean.daterange_outsidegaragedoor_3
+                  - entity: input_datetime.start_date_outsidegaragedoor_3
+                  - entity: input_datetime.end_date_outsidegaragedoor_3
+                  - type: divider
+                  - input_boolean.sun_outsidegaragedoor_3
+                  - input_datetime.sun_start_date_outsidegaragedoor_3
+                  - input_datetime.sun_end_date_outsidegaragedoor_3
+                  - type: divider
+                  - input_boolean.mon_outsidegaragedoor_3
+                  - input_datetime.mon_start_date_outsidegaragedoor_3
+                  - input_datetime.mon_end_date_outsidegaragedoor_3
+                  - type: divider
+                  - input_boolean.tue_outsidegaragedoor_3
+                  - input_datetime.tue_start_date_outsidegaragedoor_3
+                  - input_datetime.tue_end_date_outsidegaragedoor_3
+                  - type: divider
+                  - input_boolean.wed_outsidegaragedoor_3
+                  - input_datetime.wed_start_date_outsidegaragedoor_3
+                  - input_datetime.wed_end_date_outsidegaragedoor_3
+                  - type: divider
+                  - input_boolean.thu_outsidegaragedoor_3
+                  - input_datetime.thu_start_date_outsidegaragedoor_3
+                  - input_datetime.thu_end_date_outsidegaragedoor_3
+                  - type: divider
+                  - input_boolean.fri_outsidegaragedoor_3
+                  - input_datetime.fri_start_date_outsidegaragedoor_3
+                  - input_datetime.fri_end_date_outsidegaragedoor_3
+                  - type: divider
+                  - input_boolean.sat_outsidegaragedoor_3
+                  - input_datetime.sat_start_date_outsidegaragedoor_3
+                  - input_datetime.sat_end_date_outsidegaragedoor_3
+      - type: vertical-stack
+        cards:
+          - content: |
+              ## Code 4
+            type: markdown
+          - type: entities
+            entities:
+              - entity: input_text.outsidegaragedoor_name_4
+              - entity: input_text.outsidegaragedoor_pin_4
+              - entity: input_boolean.enabled_outsidegaragedoor_4
+              - entity: input_boolean.notify_outsidegaragedoor_4
+              - type: divider
+              - entity: binary_sensor.active_outsidegaragedoor_4
+              - type: divider
+              - type: 'custom:fold-entity-row'
+                head:
+                  type: section
+                  label: Advanced Options
+                entities:
+                  - entity: input_boolean.reset_advanced_outsidegaragedoor_4
+                  - type: divider
+                  - entity: input_boolean.accesslimit_outsidegaragedoor_4
+                  - entity: input_number.accesscount_outsidegaragedoor_4
+                  - type: divider
+                  - entity: input_boolean.daterange_outsidegaragedoor_4
+                  - entity: input_datetime.start_date_outsidegaragedoor_4
+                  - entity: input_datetime.end_date_outsidegaragedoor_4
+                  - type: divider
+                  - input_boolean.sun_outsidegaragedoor_4
+                  - input_datetime.sun_start_date_outsidegaragedoor_4
+                  - input_datetime.sun_end_date_outsidegaragedoor_4
+                  - type: divider
+                  - input_boolean.mon_outsidegaragedoor_4
+                  - input_datetime.mon_start_date_outsidegaragedoor_4
+                  - input_datetime.mon_end_date_outsidegaragedoor_4
+                  - type: divider
+                  - input_boolean.tue_outsidegaragedoor_4
+                  - input_datetime.tue_start_date_outsidegaragedoor_4
+                  - input_datetime.tue_end_date_outsidegaragedoor_4
+                  - type: divider
+                  - input_boolean.wed_outsidegaragedoor_4
+                  - input_datetime.wed_start_date_outsidegaragedoor_4
+                  - input_datetime.wed_end_date_outsidegaragedoor_4
+                  - type: divider
+                  - input_boolean.thu_outsidegaragedoor_4
+                  - input_datetime.thu_start_date_outsidegaragedoor_4
+                  - input_datetime.thu_end_date_outsidegaragedoor_4
+                  - type: divider
+                  - input_boolean.fri_outsidegaragedoor_4
+                  - input_datetime.fri_start_date_outsidegaragedoor_4
+                  - input_datetime.fri_end_date_outsidegaragedoor_4
+                  - type: divider
+                  - input_boolean.sat_outsidegaragedoor_4
+                  - input_datetime.sat_start_date_outsidegaragedoor_4
+                  - input_datetime.sat_end_date_outsidegaragedoor_4
+      - type: vertical-stack
+        cards:
+          - content: |
+              ## Code 5
+            type: markdown
+          - type: entities
+            entities:
+              - entity: input_text.outsidegaragedoor_name_5
+              - entity: input_text.outsidegaragedoor_pin_5
+              - entity: input_boolean.enabled_outsidegaragedoor_5
+              - entity: input_boolean.notify_outsidegaragedoor_5
+              - type: divider
+              - entity: binary_sensor.active_outsidegaragedoor_5
+              - type: divider
+              - type: 'custom:fold-entity-row'
+                head:
+                  type: section
+                  label: Advanced Options
+                entities:
+                  - entity: input_boolean.reset_advanced_outsidegaragedoor_5
+                  - type: divider
+                  - entity: input_boolean.accesslimit_outsidegaragedoor_5
+                  - entity: input_number.accesscount_outsidegaragedoor_5
+                  - type: divider
+                  - entity: input_boolean.daterange_outsidegaragedoor_5
+                  - entity: input_datetime.start_date_outsidegaragedoor_5
+                  - entity: input_datetime.end_date_outsidegaragedoor_5
+                  - type: divider
+                  - input_boolean.sun_outsidegaragedoor_5
+                  - input_datetime.sun_start_date_outsidegaragedoor_5
+                  - input_datetime.sun_end_date_outsidegaragedoor_5
+                  - type: divider
+                  - input_boolean.mon_outsidegaragedoor_5
+                  - input_datetime.mon_start_date_outsidegaragedoor_5
+                  - input_datetime.mon_end_date_outsidegaragedoor_5
+                  - type: divider
+                  - input_boolean.tue_outsidegaragedoor_5
+                  - input_datetime.tue_start_date_outsidegaragedoor_5
+                  - input_datetime.tue_end_date_outsidegaragedoor_5
+                  - type: divider
+                  - input_boolean.wed_outsidegaragedoor_5
+                  - input_datetime.wed_start_date_outsidegaragedoor_5
+                  - input_datetime.wed_end_date_outsidegaragedoor_5
+                  - type: divider
+                  - input_boolean.thu_outsidegaragedoor_5
+                  - input_datetime.thu_start_date_outsidegaragedoor_5
+                  - input_datetime.thu_end_date_outsidegaragedoor_5
+                  - type: divider
+                  - input_boolean.fri_outsidegaragedoor_5
+                  - input_datetime.fri_start_date_outsidegaragedoor_5
+                  - input_datetime.fri_end_date_outsidegaragedoor_5
+                  - type: divider
+                  - input_boolean.sat_outsidegaragedoor_5
+                  - input_datetime.sat_start_date_outsidegaragedoor_5
+                  - input_datetime.sat_end_date_outsidegaragedoor_5
+      - type: vertical-stack
+        cards:
+          - content: |
+              ## Code 6
+            type: markdown
+          - type: entities
+            entities:
+              - entity: input_text.outsidegaragedoor_name_6
+              - entity: input_text.outsidegaragedoor_pin_6
+              - entity: input_boolean.enabled_outsidegaragedoor_6
+              - entity: input_boolean.notify_outsidegaragedoor_6
+              - type: divider
+              - entity: binary_sensor.active_outsidegaragedoor_6
+              - type: divider
+              - type: 'custom:fold-entity-row'
+                head:
+                  type: section
+                  label: Advanced Options
+                entities:
+                  - entity: input_boolean.reset_advanced_outsidegaragedoor_6
+                  - type: divider
+                  - entity: input_boolean.accesslimit_outsidegaragedoor_6
+                  - entity: input_number.accesscount_outsidegaragedoor_6
+                  - type: divider
+                  - entity: input_boolean.daterange_outsidegaragedoor_6
+                  - entity: input_datetime.start_date_outsidegaragedoor_6
+                  - entity: input_datetime.end_date_outsidegaragedoor_6
+                  - type: divider
+                  - input_boolean.sun_outsidegaragedoor_6
+                  - input_datetime.sun_start_date_outsidegaragedoor_6
+                  - input_datetime.sun_end_date_outsidegaragedoor_6
+                  - type: divider
+                  - input_boolean.mon_outsidegaragedoor_6
+                  - input_datetime.mon_start_date_outsidegaragedoor_6
+                  - input_datetime.mon_end_date_outsidegaragedoor_6
+                  - type: divider
+                  - input_boolean.tue_outsidegaragedoor_6
+                  - input_datetime.tue_start_date_outsidegaragedoor_6
+                  - input_datetime.tue_end_date_outsidegaragedoor_6
+                  - type: divider
+                  - input_boolean.wed_outsidegaragedoor_6
+                  - input_datetime.wed_start_date_outsidegaragedoor_6
+                  - input_datetime.wed_end_date_outsidegaragedoor_6
+                  - type: divider
+                  - input_boolean.thu_outsidegaragedoor_6
+                  - input_datetime.thu_start_date_outsidegaragedoor_6
+                  - input_datetime.thu_end_date_outsidegaragedoor_6
+                  - type: divider
+                  - input_boolean.fri_outsidegaragedoor_6
+                  - input_datetime.fri_start_date_outsidegaragedoor_6
+                  - input_datetime.fri_end_date_outsidegaragedoor_6
+                  - type: divider
+                  - input_boolean.sat_outsidegaragedoor_6
+                  - input_datetime.sat_start_date_outsidegaragedoor_6
+                  - input_datetime.sat_end_date_outsidegaragedoor_6

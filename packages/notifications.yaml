@@ -1,0 +1,22 @@
+homeassistant:
+# ifttt:
+  # key: !secret ifttt_key
+
+tts:
+  - platform: google_translate
+    service_name: google_say
+    cache: true
+    cache_dir: /tts
+    time_memory: 300
+    
+# ios:
+  # push:
+    # categories:
+      # - name: cameras
+        # identifier: 'camera'
+        # actions:
+          # - identifier: 'TTS_MESSAGE'
+            # title: 'Sonos TTS'
+            # behavior: 'textInput'
+            # textInputButtonTitle: 'Send TTS'
+            # textInputPlaceholder: 'Who goes there?'

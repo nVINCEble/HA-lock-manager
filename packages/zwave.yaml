@@ -1,0 +1,45 @@
+zwave:
+  usb_path: /dev/ttyACM0
+  network_key: !secret zwave_network_key
+  
+  device_config_glob:
+
+    # We have an dedicated alarm system and not going to use these z-wave
+    # features; ignore.
+    "*_burglar*":
+      ignored: true
+      polling_intensity: 0
+    # "*_alarm_type":
+      # ignored: true
+      # polling_intensity: 0
+    # "*_alarm_level":
+      # ignored: true
+      # polling_intensity: 0
+
+    # Not sure why this is useful... I don't use it; ignore.
+    "*_sourcenodeid":
+      ignored: true
+    "*_co2_level":
+      ignored: true
+    "*_barometric_pressure":
+      ignored: true
+    "*_general":
+      ignored: true
+    "*_room_power":
+      ignored: true
+    "*_room_angle_position":
+      ignored: true
+    "*_room_seismic_intensity":
+      ignored: true
+    "*_seismic_magnitude":
+      ignored: true
+    "*_room_tank_capacity":
+      ignored: true     
+    "*_room_electrical_resistivity":
+      ignored: true  
+    "*_room_loudness":
+      ignored: true  
+    "*_room_moisture":
+      ignored: true  
+    "*_room_tide_level":
+      ignored: true  
