@@ -1,0 +1,32 @@
+- type: custom:vertical-stack-in-card
+  cards:
+    - content: |
+        ## Washer
+      type: markdown
+    - type: entities
+      entities:
+        - entity: switch.washer
+          icon: fas:power-off
+        - entity: sensor.washer_power
+          icon: fas:bolt
+        - type: divider
+        - entity: sensor.washing_machine_status
+          icon: mdi:washing-machine
+- type: custom:vertical-stack-in-card
+  cards:
+    - content: |
+        ## Dryer
+      type: markdown
+    - type: entities
+      entities:
+        - entity: switch.dryer
+          icon: fas:power-off
+        - entity: sensor.dryer_power
+          icon: fas:bolt
+        - entity: sensor.dryer_door_status
+          icon: fas:door-closed
+        - type: divider
+        - entity: sensor.dryer_status
+          icon: mdi:tumble-dryer
+
+        

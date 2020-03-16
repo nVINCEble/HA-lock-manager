@@ -1,0 +1,27 @@
+# https://dwainscheeren.github.io/lovelace-dwains-theme/configuration/house_information.html
+
+house_information:
+  favorites:
+    - entity: binary_sensor.front_door_ding
+      icon_on: fas:bell
+      icon_off: fas:bell
+    - entity: binary_sensor.backyard_motion
+      icon_on: fas:door-open
+      icon_off: fas:door-closed
+    - entity: binary_sensor.front_door_motion
+      icon_on: fas:door-open
+      icon_off: fas:door-closed
+    - entity: binary_sensor.side_gate
+      icon_on: fas:door-open
+      icon_off: fas:door-closed
+    - entity: binary_sensor.side_motion
+      icon_on: fas:door-open
+      icon_off: fas:door-closed
+    - entity: lock.schlage_be469nxcen_touchscreen_deadbolt_locked_outsidegaragedoor
+      icon_on: fas:lock
+      icon_off: fas:unlock-alt
+
+      
+  # calendar:
+  #   - calendar.trash
+  #   - calendar.birthdays

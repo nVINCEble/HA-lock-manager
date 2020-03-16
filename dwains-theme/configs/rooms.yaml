@@ -1,0 +1,113 @@
+# https://dwainscheeren.github.io/lovelace-dwains-theme/configuration/rooms.html
+
+rooms:
+  - name: Hallway
+    icon: fas:key
+    light: light.hallway_light
+    # temperature: sensor.hallway_temperature
+    # climate: climate.hallway_climate
+    # humidity: sensor.halway_humidity
+    motion: binary_sensor.hallway_sensor
+    # door: binary_sensor.hallway_door_contact
+    # window: binary_sensor.hallway_window_contact
+    # vacuum: 
+      # entity: vacuum.rockrobo
+      # camera: camera.rockrobo_map
+    # plant: plant.hallway_plant
+    # media_player: media_player.awesome_hallway_tv
+    more_entities:
+      entities:
+        - entity: sensor.hallway_sensor_battery
+        
+  - name: Master
+    icon: fas:chess
+    light: group.master_room_lights
+    temperature: sensor.master_temperature
+    humidity: sensor.master_relative_humidity
+    motion: binary_sensor.master_sensor
+    media_player: media_player.master_apple_tv
+    # addons:
+      # - name: Hello room
+        # icon: fas:puzzle-piece
+        # path: 'dwains-theme/addons/rooms/hello-room/page.yaml'
+        # button_path: 'dwains-theme/addons/rooms/hello-room/button.yaml'
+        # data:
+          # some_data: 'This is some data parsed.'
+          # some_other_data: 'and some other data.'
+          # entity: vacuum.roborock
+    # more_entities:
+      # columns: 2 #optional
+      # entities:
+        # - entity: light.master_lights
+        # - entity: light.master_lamp
+        
+  - name: Drew & Miles Room
+    icon: fas:chess-knight
+    light: light.bookends_room_light
+    temperature: sensor.bookends_room_temperature
+    humidity: sensor.bookends_room_relative_humidity
+    motion: binary_sensor.bookends_room_sensor
+
+
+  - name: Cole & Grady Room
+    icon: fas:chess-rook
+    light: light.twins_room_light
+    temperature: sensor.twins_room_temperature
+    humidity: sensor.twins_room_relative_humidity
+    motion: binary_sensor.twins_room_sensor
+    
+  - name: Living Area
+    icon: fas:couch
+    light: group.living_area_lights
+    temperature: sensor.living_room_temperature
+    humidity: sensor.living_room_relative_humidity
+    motion: binary_sensor.living_room_sensor
+    media_player: media_player.family_room_apple_tv
+    # more_entities:
+      # columns: 2 #optional
+      # entities:
+        # - entity: light.living_room_light
+        # - entity: light.dining_room_light
+        # - entity: light.front_entry_light
+    
+  - name: Office
+    icon: fas:desktop
+    light: light.jarel_room_light
+    temperature: sensor.jarel_room_temperature
+    humidity: sensor.jarel_room_relative_humidity
+    motion: binary_sensor.jarel_room_sensor
+    media_player: media_player.office_apple_tv
+ 
+  - name: Kids Bathroom
+    icon: fas:bath
+    light: switch.kids_bathroom_light
+    temperature: sensor.kids_bathroom_temperature
+    humidity: sensor.kids_bathroom_relative_humidity
+    motion: binary_sensor.kids_bathroom_sensor
+    more_entities:
+      columns: 1 #optional
+      entities:
+        - entity: sensor.kids_bathroom_battery
+        - entity: switch.kids_bathroom_light
+        - entity: switch.kids_bathroom_fan     
+
+  - name: Mudroom
+    icon: fas:shoe-prints
+    light: light.mudroom_light
+    motion: binary_sensor.mudroom_sensor
+    more_entities:
+      entities:
+        - entity: sensor.mudroom_battery_level
+        
+  # - name: Bedroom
+    # icon: fal:bed
+    # more_entities:
+      # columns: 2 #optional
+      # entities:
+        # - entity: sensor.name1
+        # - entity: sensor.name2
+    # page_entities:
+      # columns: 1 #optional
+      # entities:
+        # - entity: sensor.name1
+        # - entity: sensor.name2

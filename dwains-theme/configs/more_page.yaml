@@ -1,0 +1,17 @@
+# https://dwainscheeren.github.io/lovelace-dwains-theme/configuration/more_page.html
+
+more_page:
+  addons:
+    - name: Lock
+      icon: fas:chart-area
+      path: 'dwains-theme/addons/more_page/lock/lock.yaml'
+#       data:
+#         some_data: 'This is some data parsed.'
+#         some_other_data: 'and some other data.'
+
+    - name: Laundry
+      icon: mdi:washing-machine
+      path: 'dwains-theme/addons/more_page/laundry/laundry.yaml'
+      data:
+        some_data: 'This page is to check the status of the Washer'
+        some_other_data: 'and dryer.'

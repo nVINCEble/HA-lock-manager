@@ -1,0 +1,14 @@
+# https://dwainscheeren.github.io/lovelace-dwains-theme/configuration/scenes.html
+
+scenes:
+  - entity: input_boolean.office_daytime_override
+    icon: fas:lightbulb
+    icon_color: '#ffffff'
+    background: 'linear-gradient( 135deg, #FEB692 10%, #EA5455 100%)'
+  - entity: input_boolean.kids_sleeping
+    icon: fas:lightbulb
+  - entity: input_boolean.master_lights_on_disable
+  - entity: input_boolean.goodnight
+    icon: fas:moon
+  - entity: input_select.guest
+    icon: fas:users

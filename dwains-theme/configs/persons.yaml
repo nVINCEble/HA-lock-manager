@@ -1,0 +1,20 @@
+# https://dwainscheeren.github.io/lovelace-dwains-theme/configuration/persons.html
+
+persons: 
+  - name: Vince
+    track: person.vince
+    picture_path: 'images/persons/vince.jpg'
+    # more_entities:
+      # columns: 1 #optional
+      # entities:
+        # - entity: sensor.steps
+        # - entity: sensor.steps
+    # page_entities:
+      # columns: 2 #optional
+      # entities:
+        # - entity: sensor.steps
+        # - entity: sensor.steps
+        
+  - name: Stac
+    track: person.stac
+    picture_path: 'images/persons/stac.jpg'
